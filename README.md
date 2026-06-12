@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://atom-md.vercel.app/logo.png" alt="Atom-MD Logo" width="120" />
+<img src="https://atom-md.vercel.app/assets/img/logo.jpg" alt="Atom-MD Logo" width="120" />
 
 # ⚛️ ATOM-MD
 
@@ -76,120 +76,12 @@ Whether you want to automate your WhatsApp presence, deploy AI-powered replies, 
 
 ---
 
-## 📦 Dependencies
-
-| Package | Purpose |
-|---|---|
-| `@whiskeysockets/baileys` | WhatsApp Web API — core multi-device connection layer |
-| `@google/genai` | Google Gemini & Gemma AI — chat, vision, image gen, TTS |
-| `mongoose` | MongoDB ODM — session storage, settings, AI config |
-| `socket.io` | Real-time bidirectional WebSocket communication |
-| `express` | HTTP server & REST API layer |
-| `cloudinary` | Cloud media storage for profile pictures & uploads |
-| `axios` | HTTP client for external API calls |
-| `pino` | High-performance structured logger |
-| `node-cache` | In-memory TTL cache (settings, message retry) |
-| `node-cron` | Scheduled background task runner |
-| `multer` | Multipart form-data file upload handler |
-| `qrcode` | Generates QR code PNG buffers for WhatsApp pairing |
-| `qrcode-terminal` | Renders QR codes in terminal output |
-| `cors` | Cross-origin resource sharing middleware |
-| `dotenv` | Loads environment variables from `.env` |
-| `form-data` | Constructs multipart form data for API requests |
-| `fs-extra` | Extended filesystem utilities |
-| `moment-timezone` | Timezone-aware date & time formatting |
-| `adm-zip` | ZIP archive handling for file operations |
-| `yt-search` | YouTube metadata search for media commands |
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
 - **Node.js** v18 or higher
 - **MongoDB** database (MongoDB Atlas recommended — free tier works great)
 - **Cloudinary** account (optional, for media uploads)
-
-
-### 2. Configure Environment Variables
-Create a `.env` file in the root directory:
-
-```env
-# ─────────────────────────────────────────
-#  DATABASE (REQUIRED)
-# ─────────────────────────────────────────
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/atommd
-
-# ─────────────────────────────────────────
-#  ADMIN PANEL (REQUIRED)
-# ─────────────────────────────────────────
-ADMIN_PASSWORD=your_secure_admin_password
-
-# ─────────────────────────────────────────
-#  SERVER
-# ─────────────────────────────────────────
-PORT=3000
-
-# ─────────────────────────────────────────
-#  CLOUDINARY — Profile Picture Uploads (Optional)
-# ─────────────────────────────────────────
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# ─────────────────────────────────────────
-#  SECURITY
-# ─────────────────────────────────────────
-HMAC_SECRET=your_hmac_secret_key
-RECAPTCHA_SECRET=your_recaptcha_secret
-```
-
-> ⚠️ **Never commit your `.env` file.** It is already included in `.gitignore`.
-
-### 3. Install & Run
-```bash
-npm install
-npm start
-```
-
-The bot engine starts up with a **3-minute initialization delay** to allow all sessions to restore cleanly. The web dashboard frontend runs separately (e.g., hosted on Vercel) and communicates with this backend via WebSockets.
-
----
-
-## 🐳 Docker Deployment
-
-A `Dockerfile` and `docker-compose.yml` are included for containerized deployments.
-
-```bash
-docker-compose up -d
-```
-
----
-
-## 📁 Project Structure
-
-```
-Atom-MD/
-├── index.js              # 🧠 Main bot engine & WebSocket server
-├── start.js              # 🚀 Startup script & session bootstrapper
-├── config.js             # ⚙️  Global configuration & default settings
-├── db.js                 # 🍃 MongoDB connection handler
-├── package.json
-├── Dockerfile
-├── docker-compose.yml
-├── .env                  # 🔒 Environment secrets (not committed)
-└── src/
-    ├── commands/         # 📂 Modular command handlers
-    ├── plugins/
-    │   └── channelManager.js   # 📡 WhatsApp Channels manager
-    ├── lib/
-    │   ├── models.js           # 🗄️  Mongoose schemas (Session, Settings, AI)
-    │   ├── mongoAuth.js        # 🔐 MongoDB-backed Baileys auth state
-    │   └── voice.MP3           # 🔊 Anti-call audio response
-    └── security/
-        ├── hmac.js             # 🛡️  HMAC request signing & verification
-        └── recaptcha.js        # 🤖 Google reCAPTCHA token validation
-```
 
 ---
 
