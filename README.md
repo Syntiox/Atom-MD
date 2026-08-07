@@ -13,9 +13,18 @@
 
 **AI-Powered · Privacy Shield · Auto Replies · Media Download · 24/7 Online**
 
-[🌐 Dashboard](https://atom.syntiox.top) · [📢 WhatsApp Channel](https://whatsapp.com/channel/0029Vb6o3EiGJP8CoA3Olr28) · [💬 Support](https://wa.me/94761358233)
+[🌐 Dashboard](https://atom.syntiox.top/dash) · [❓ FAQ](https://atom.syntiox.top/faq) · [📜 Terms of Service](https://atom.syntiox.top/tos) · [🔏 Privacy Policy](https://atom.syntiox.top/privacy)
+
+[📢 WhatsApp Channel](https://whatsapp.com/channel/0029Vb6o3EiGJP8CoA3Olr28) · [💬 Support](https://wa.me/94761358233) · [🆘 Help Center](https://atom.syntiox.top/help)
 
 </div>
+
+---
+
+> [!NOTE]
+> **Concerned about privacy?** If you prefer to host your own bot on your own VPS with full control over your data, check out **[Cipher MD](https://cipher-md.vercel.app/)** — our self-hosted WhatsApp bot with **150+ commands**, zero coding required. Just deploy and go.
+> 
+> 👉 **[Learn More](https://cipher-md.vercel.app/)** · **[Deployment Guide](https://cipher-md.vercel.app/deployment)**
 
 ---
 
@@ -31,10 +40,15 @@ Once connected, Atom-MD supercharges your WhatsApp with AI chat, privacy protect
 
 Getting your bot up and running takes less than **2 minutes**. Here's how:
 
-### Step 1: Open the Dashboard
-Go to **[atom.syntiox.top](https://atom.syntiox.top)** from any browser (phone or computer).
+### Step 1: Log In to Syntiox
+Before connecting your bot, you need a **Syntiox account**. Go to **[atom.syntiox.top](https://atom.syntiox.top)** and sign in or create a free account. You can sign up directly from the Atom-MD website itself — no need to go anywhere else.
 
-### Step 2: Connect Your WhatsApp
+> 💡 This is a one-time step. Once you have a Syntiox account, you'll always be logged in.
+
+### Step 2: Open the Dashboard
+After logging in, navigate to the **[Dashboard](https://atom.syntiox.top/dash)** to start connecting your WhatsApp.
+
+### Step 3: Connect Your WhatsApp
 You have **two options** to connect:
 
 | Method | How It Works |
@@ -42,14 +56,14 @@ You have **two options** to connect:
 | **📷 QR Code** | A QR code appears on screen. Open WhatsApp → **Linked Devices** → **Link a Device** → Scan the QR. |
 | **🔢 Pairing Code** | Enter your phone number (with country code, e.g., `94771234567`). You'll receive an 8-digit code — enter it in WhatsApp → **Linked Devices** → **Link with Phone Number**. |
 
-### Step 3: Receive Your Password
+### Step 4: Receive Your Password
 Once connected, Atom-MD will automatically send you a message in your WhatsApp inbox containing:
 - ✅ Your **Bot Number** (the session identifier)
 - 🔑 Your **Dashboard Password**
 
 > ⚠️ **Save this password!** You need it every time you log into the dashboard. If you lose it, type `.password` in your WhatsApp to retrieve it again.
 
-### Step 4: Log Into the Dashboard
+### Step 5: Log Into the Dashboard
 Go back to **[atom.syntiox.top](https://atom.syntiox.top)**, enter your **Bot Number** and **Password**, and you're in! 🎉
 
 ---
@@ -400,7 +414,11 @@ The bot auto-reconnects in most cases. If it doesn't, go to [atom.syntiox.top](h
 
 | Resource | Link |
 |---|---|
-| 🌐 **Dashboard** | [atom.syntiox.top](https://atom.syntiox.top) |
+| 🌐 **Dashboard** | [atom.syntiox.top/dash](https://atom.syntiox.top/dash) |
+| ❓ **FAQ** | [atom.syntiox.top/faq](https://atom.syntiox.top/faq) |
+| 🆘 **Help Center** | [atom.syntiox.top/help](https://atom.syntiox.top/help) |
+| 📜 **Terms of Service** | [atom.syntiox.top/tos](https://atom.syntiox.top/tos) |
+| 🔏 **Privacy Policy** | [atom.syntiox.top/privacy](https://atom.syntiox.top/privacy) |
 | 📢 **WhatsApp Channel** | [Follow for Updates](https://whatsapp.com/channel/0029Vb6o3EiGJP8CoA3Olr28) |
 | 💬 **Direct Support** | [Chat on WhatsApp](https://wa.me/94761358233) |
 | 🐛 **Report a Bug** | [Open an Issue](https://github.com/sh4lu-z/Atom-MD/issues) |
