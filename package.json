@@ -7,8 +7,25 @@
     "start": "node start.js"
   },
   "dependencies": {
+    "@google/genai": "latest",
+    "@whiskeysockets/baileys": "latest",
     "adm-zip": "latest",
     "axios": "latest",
-    "dotenv": "latest"
+    "cloudinary": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "ffmpeg-static": "latest",
+    "fluent-ffmpeg": "latest",
+    "form-data": "latest",
+    "ioredis": "latest",
+    "mongoose": "latest",
+    "multer": "latest",
+    "node-cache": "latest",
+    "pino": "latest",
+    "qrcode": "latest",
+    "qrcode-terminal": "latest",
+    "socket.io": "latest",
+    "yt-search": "latest"
   }
 }
