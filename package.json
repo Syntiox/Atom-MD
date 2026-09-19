@@ -1,0 +1,14 @@
+{
+  "name": "atom-md-public",
+  "version": "1.0.0",
+  "description": "Atom-MD Public Bootstrapper",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "adm-zip": "latest",
+    "axios": "latest",
+    "dotenv": "latest"
+  }
+}
