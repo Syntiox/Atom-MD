@@ -5,12 +5,6 @@ const crypto = require('crypto');
 const AdmZip = require('adm-zip');
 require('dotenv').config();
 
-console.log("\x1b[36m\x1b[1m%s\x1b[0m", "\n===============================================");
-console.log("\x1b[37m\x1b[1m%s\x1b[0m", "       ATOM MD - Secure Bootstrapper");
-console.log("\x1b[32m\x1b[1m%s\x1b[0m", "          Created by Syntiox");
-console.log("\x1b[31m\x1b[1m%s\x1b[0m", "  I AGREE TO THE TERMS: NO EDITING | NO LIABILITY");
-console.log("\x1b[36m\x1b[1m%s\x1b[0m", "================================================\n");
-
 const { execSync } = require('child_process');
 
 // Get the user's secret key from their .env
@@ -31,8 +25,8 @@ async function initializeSystem() {
         const timestampMs = Date.now();
         // Generate a time-based signature using the user's secret key
         const sig = crypto.createHmac('sha256', ATOM_SECRET_KEY)
-                          .update(timestampMs.toString())
-                          .digest('hex');
+            .update(timestampMs.toString())
+            .digest('hex');
 
         console.log("🔒 Authenticating with ATOM servers...");
         const res = await axios.get(GATEKEEPER_URL, {
@@ -64,7 +58,7 @@ async function initializeSystem() {
                 errorMsg = `Server returned status: ${error.response.status}`;
             }
         }
-        
+
         console.log("\x1b[31m%s\x1b[0m", "❌ Boot Error: " + errorMsg);
         console.log("Retrying in 10 seconds...");
         setTimeout(initializeSystem, 10000);
